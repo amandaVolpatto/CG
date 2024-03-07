@@ -18,6 +18,10 @@ ROSA = (255, 0, 255)
 AZUL = (0, 0, 255)
 VERDE = (0, 255, 0)
 
+r = 0 #cores
+g = 0
+b = 0
+
 tamanho_fonte = 50
 fonte = pygame.font.SysFont(None, tamanho_fonte)
 
@@ -54,6 +58,7 @@ clock = pygame.time.Clock() #tempo do processamento do nome
 velocidade_x = random.randint(-1,1)
 velocidade_y = random.randint(-1,1)
 
+#Garantir que velocidade inicial não seja 0
 while velocidade_x == 0:
     velocidade_x = random.randint(-1,1)
 while velocidade_y == 0:
@@ -68,26 +73,57 @@ while True:
 
     texto_rect.x += velocidade_x #+= é encremento, cada loop ele soma 1
     texto_rect.y += velocidade_y
+    
 
     if texto_rect.right >= largura: #não pode colocar dentro do if, está me loop. 
         velocidade_x = -velocidade_x 
-        texto = fonte.render("Amanda", True, VERMELHO)
+        #poderia ser assim velocidade_x = random.randint(-1,0)
         velocidade_y = random.randint(-1,1)
+        r=random.randint(0,255) #Sorteia a cor
+        g=random.randint(0,255)
+        b=random.randint(0,255)
+
+        COR = (r,g,b) #Monta a cor
+        texto = fonte.render("Amanda", True, COR)
+        
     if texto_rect.left <= 0: #não pode colocar dentro do if, está me loop. 
         velocidade_x = -velocidade_x 
-        texto = fonte.render("Amanda", True, ROSA)
+        #poderia ser assim velocidade_x = random.randint(0,1)
         velocidade_y = random.randint(-1,1)
+
+        r=random.randint(0,255) #Sorteia a cor
+        g=random.randint(0,255)
+        b=random.randint(0,255)
+
+        COR = (r,g,b) #Monta a cor
+        texto = fonte.render("Amanda", True, COR)
+        
+       
     if texto_rect.bottom  >= altura:# quando o bottom for maior ou igual a 600 ou o top for menor ou igual a 0
         velocidade_y = -velocidade_y 
-        texto = fonte.render("Amanda", True, AZUL)
         velocidade_x = random.randint(-1,1)
+
+        r=random.randint(0,255) #Sorteia a cor
+        g=random.randint(0,255)
+        b=random.randint(0,255)
+
+        COR = (r,g,b) #Monta a cor
+        texto = fonte.render("Amanda", True, COR)
+        
     if texto_rect.top <= 0:# quando o bottom for maior ou igual a 600 ou o top for menor ou igual a 0
         velocidade_y = -velocidade_y 
-        texto = fonte.render("Amanda", True, VERDE)
         velocidade_x = random.randint(-1,1)
+
+        r=random.randint(0,255) #Sorteia a cor
+        g=random.randint(0,255)
+        b=random.randint(0,255)
+
+        COR = (r,g,b) #Monta a cor
+        texto = fonte.render("Amanda", True, COR) #Monta o texto com a cor sorteada
+       
         
     
-    clock.tick(220) #tempo
+    clock.tick(340) #tempo
     tela.fill(PRETO)
     tela.blit(texto, texto_rect)
     pygame.display.flip()
