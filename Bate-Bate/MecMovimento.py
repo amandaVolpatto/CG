@@ -32,7 +32,7 @@ class MovendoTexto:
             self.velocidade_y = random.randint(-1, 1)
             self.change_color()
 
-         if self.texto_rect.right >= self.largura:
+        if self.texto_rect.right >= self.largura:
             self.velocidade_x = random.randint(-1, 0) 
             self.velocidade_y = random.randint(-1, 1)
             self.change_color()

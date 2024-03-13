@@ -8,7 +8,7 @@ class Game:
         self.largura = 800
         self.altura = 600
         self.tela = pygame.display.set_mode((self.largura, self.altura))
-        self.pygame.display.set_caption("Bate-Bate")
+        pygame.display.set_caption("Bate-Bate")
         self.clock = pygame.time.Clock()
         self.MovendoTexto = MovendoTexto("Amanda", 50, self.largura, self.altura)
 
@@ -17,7 +17,7 @@ class Game:
         while rodando:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    rodando = False]
+                    rodando = False
             self.MovendoTexto.mover()
             self.tela.fill((0, 0, 0))
             self.tela.blit(self.MovendoTexto.texto_surf, self.MovendoTexto.texto_rect)
