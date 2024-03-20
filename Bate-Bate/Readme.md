@@ -8,3 +8,7 @@
 
 <p> No diagrama é possivel vizualizar classe, atributos e métodos </p>
 
+<h1>Tecnologias Utilizadas</h1>
+
+<p> Liguagem de programação Pythom </p>
+<p> Studio Visual Code </p>
