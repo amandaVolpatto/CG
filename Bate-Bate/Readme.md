@@ -1,2 +1,1 @@
-![Untitled](https://github.com/amandaVolpatto/CG/assets/110207360/0e78c5f2-1d3a-4d65-bd8e-7964b4a92fb3)
-
+![3](https://github.com/amandaVolpatto/CG/assets/110207360/b05dcf86-8c25-48e2-ad62-ae4f33212f12)
