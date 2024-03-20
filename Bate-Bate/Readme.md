@@ -1,6 +1,6 @@
 <h1>✨Projeto Bate-Bate✨</h1>
 
-<p>O jogo Bate-Bate, foi no 1º Semestre da Materia Computação Gráfica e Tecnologias Imersivas do curso de Sistemas de Informação do Centro Universitário Unimater de 🦆Pato Branco🦆 (PR). </p>
+<p>O jogo Bate-Bate, foi desenvolvido nas aulas do 1º Semestre da Materia Computação Gráfica e Tecnologias Imersivas do curso de Sistemas de Informação do Centro Universitário Unimater de 🦆Pato Branco🦆 (PR). </p>
 
 <h1>Diagrama</h1>
 
